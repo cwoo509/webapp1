@@ -16,7 +16,7 @@
 		 </li>
 		 <li class="chapter">
 			Ch03.
-			 <a href="<%=application.getContextPath() %>/ch02/content">Request Parameter</a>
+			 <a href="<%=application.getContextPath() %>/ch03/content">Request Parameter</a>
 		 </li>
 	</ul>			
 </div>

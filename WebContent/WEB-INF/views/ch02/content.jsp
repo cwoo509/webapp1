@@ -53,6 +53,9 @@
 							</script>
 							<div id="joinForm"></div>
 						</div>
+						<div>
+						
+						</div>
 					</div>
 				</div>
 			</div>		
