@@ -26,5 +26,9 @@
 			Ch06.
 			 <a href="<%=application.getContextPath() %>/ch06/content">FORWORD REDIRECT</a>
 		 </li>
+		   <li class="chapter">
+			Ch07.
+			 <a href="<%=application.getContextPath() %>/ch07/content">Data Delivery</a>
+		 </li>
 	</ul>			
 </div>
