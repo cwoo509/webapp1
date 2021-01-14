@@ -18,7 +18,19 @@
   	<param-value>classpath:spring/root/*.xml</param-value> <!-- 경로를 통해 위치를 알려준다 -->
   	
   </context-param>
-  
+  <!-- POST방식의 문자셋 인코딩 방식 -->
+  <filter>
+  	<filter-name>encodingFilte</filter-name>
+  	<filter-class>org.springframework.web.filter.CharacterEncodingFilter</filter-class>
+  	<init-param>
+  		<param-name>encoding</param-name>
+  		<param-value>UTF-8</param-value>
+  	</init-param>
+  </filter>
+  <filter-mapping>
+  	<filter-name>encodingFilte</filter-name>
+  	<url-pattern>/*</url-pattern>
+  </filter-mapping>
   
   <servlet>
   	<!-- WebApplicationContext 설정 -->

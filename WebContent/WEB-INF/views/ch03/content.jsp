@@ -58,11 +58,24 @@
 								<button class="btn btn=info btn=sm">데이터전달</button>
 							</form>						
 						</div>
+					<div class= "sector">
+					<h5>data tranfer object 객체받기</h5>
+					<div>
+						<form method="post" action="method4">
+						<input type="text" name="param1" value="문자열"/><br/>
+							<input type="number" name="param2" value="5"/><br/>
+							<input type="number" name="param3" value="3.14"/><br/>
+							<input type="checkbox" name="param4" value="checked"/><br/>
+							<input type="date" name="param5" value="2021-12-25"/><br/>
+							<button class="btn btn=info btn=sm">데이터전달</button>
+						</form>						
+					</div>
 					</div>
 				</div>
 			</div>
 		</div>	
 		</div>	
+		</div>
 		</div>		
 	</body>
 </html>

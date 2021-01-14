@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import com.mycompany.webapp.controller.dto.Ch03Dto;
+
 @Controller//컨트롤러 객체가 자동으로 만들어짐
 @RequestMapping("/ch03") //경로에 챕터 3 이 있을때 컨트롤러가 요청처리를 하겠다.
  public class Ch03Controller {
@@ -63,7 +65,14 @@ import org.springframework.web.bind.annotation.RequestParam;
 		logger.info("param4:" + param4 );
 		return "ch03/content";
 	}
+	@RequestMapping("/method4")//이 메소드는 4개의 매개값을 받고싶지만 브라우져에서 보낼때는 한 개만 보냈다.
+	public String method4(Ch03Dto dto)	{
 	
-	
-
+		logger.info("param1:" + dto.getParam1());
+		logger.info("param2:" + dto.getParam2());
+		logger.info("param3:" + dto.getParam3());
+		logger.info("param4:" + dto.isParam4());
+		logger.info("param4:" + dto.getParam5());
+		return "ch03/content";
+	}
 }
