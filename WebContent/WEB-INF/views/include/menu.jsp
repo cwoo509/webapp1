@@ -22,5 +22,9 @@
 			Ch05.
 			 <a href="<%=application.getContextPath() %>/ch05/content">header/Cookie</a>
 		 </li>
+		  <li class="chapter">
+			Ch06.
+			 <a href="<%=application.getContextPath() %>/ch06/content">FORWORD REDIRECT</a>
+		 </li>
 	</ul>			
 </div>
