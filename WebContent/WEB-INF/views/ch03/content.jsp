@@ -17,34 +17,52 @@
 			<div class="mainCenter">
 					<jsp:include page="/WEB-INF/views/include/menu.jsp"/>
 				<div class="content">
-					<div class="sector">
-						<h5>요청 맵핑</h5>
-						<div>								
-							GET 방식 요청:<a class="btn btn-info btn-sm" href="getMethod">겟</a>
-							<br/>						
-							<br/>
-							POST 방식 요청:<form method="post" action="postMethod" style="display:inline-block;">
-								<button class="btn btn-info btn-sm">포스트</button>
-							</form>
-						</div>
+					 <div class="sector">
+						<h5>GET	방식 데이터 전달</h5>
 					</div>
-					<div class="sector">
-						<h5>요청방식별 회원가입처리</h5>
-						<div>								
-							GET 방식 요청:<a class="btn btn-info btn-sm" 
-									href="join">회원가입</a>
-						
-						</div>
-					</div>
-					<div class="sector">
-						<h5>비동기 처리(html 조각)</h5>
-						<div>								
-						
-							<div id="joinForm"></div>
+					<div>
+						<a class="btn btn-info btn-sm" href="method1?param1=문장열&param2=5&param3=3.14&param4=true&param5=2021-01-14">데이터전달</a>
+					</div> 
+				</div>
+				<div class="content">
+					<div class= "sector">
+						<h5>POST	방식 데이터 전달</h5>
+					<div>
+						<form method="post" action="method1">
+							<input type="text" name="param1" value="문자열"/><br/>
+							<input type="number" name="param2" value="5"/><br/>
+							<input type="number" name="param3" value="3.14"/><br/>
+							<input type="checkbox" name="param4" value="checked"/><br/>
+							<input type="date" name="param5" value="2021-12-25"/><br/>
+							<button class="btn btn=info btn=sm">데이터전달</button>
+						</form>	
+						</div>		
+						<div class= "sector">
+						<h5>POST방식 데이터 전달</h5>
+					<div>
+						<form method="post" action="method2">
+							<input type="text" name="param1" value="문자열"/><br/>
+							<input type="number" name="param2" value="5"/><br/>
+							<input type="number" name="param3" value="3.14"/><br/>
+							<input type="checkbox" name="param4" value="checked"/><br/>
+							<input type="date" name="param5" value="2021-12-25"/><br/>
+							<button class="btn btn=info btn=sm">데이터전달</button>
+						</form>	
+						</div>								
+					<div class= "sector">
+						<h5>디폴트값</h5>
+						<div>
+							<form method="post" action="method3">
+								<input type="text" name="param1" value="snowman"/><br/>
+								<input type="number" name="param2" value="5"/><br/>
+								<button class="btn btn=info btn=sm">데이터전달</button>
+							</form>						
 						</div>
 					</div>
 				</div>
-			</div>		
-		</div>
+			</div>
+		</div>	
+		</div>	
+		</div>		
 	</body>
 </html>
