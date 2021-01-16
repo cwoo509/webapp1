@@ -38,9 +38,9 @@ public class Ch06Controller {
 		logger.info("게시물 저장 성공 ");
 		return "redirect:/ch06/boardlist";
 	}
-	@GetMapping("/boardlist")
+	@GetMapping("/list")
 	public String boardlist() {
 		logger.info("게시물 저장 성공 ");
-		return "ch06/boardlist";
+		return "ch06/list";
 	}
 }
