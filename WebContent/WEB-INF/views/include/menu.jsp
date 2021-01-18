@@ -35,8 +35,12 @@
 			 <a href="<%=application.getContextPath() %>/ch08/content">Data Delivery(Session이용)</a>
 		 </li>
 		   <li class="chapter">
-			Ch08.
+			Ch09.
 			 <a href="<%=application.getContextPath() %>/ch09/content">File Upload / Download </a>
+		 </li>
+		  <li class="chapter">
+			Ch13.
+			 <a href="<%=application.getContextPath() %>/ch13/content">DI Dependency Injection </a>
 		 </li>
 	</ul>			
 </div>
